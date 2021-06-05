@@ -1,9 +1,10 @@
 {
   "resources": [
     {"id":{"name":"Why_this_broke","path":"objects/Why_this_broke/Why_this_broke.yy",},"order":0,},
-    {"id":{"name":"Object4","path":"objects/Object4/Object4.yy",},"order":2,},
+    {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},"order":2,},
     {"id":{"name":"AAAAAAAAAAAAAAAAA","path":"objects/AAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAA.yy",},"order":1,},
     {"id":{"name":"Hi_Jenni","path":"objects/Hi_Jenni/Hi_Jenni.yy",},"order":1,},
+    {"id":{"name":"Object4","path":"objects/Object4/Object4.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
