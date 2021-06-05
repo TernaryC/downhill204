@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"Why_this_broke","path":"objects/Why_this_broke/Why_this_broke.yy",},"order":0,},
     {"id":{"name":"AAAAAAAAAAAAAAAAA","path":"objects/AAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAA.yy",},"order":1,},
+    {"id":{"name":"Hi_Jenni","path":"objects/Hi_Jenni/Hi_Jenni.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -44,7 +45,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "Weekly204",
