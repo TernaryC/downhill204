@@ -2,9 +2,12 @@
   "resources": [
     {"id":{"name":"s_Player","path":"sprites/s_Player/s_Player.yy",},"order":0,},
     {"id":{"name":"o_Player","path":"objects/o_Player/o_Player.yy",},"order":2,},
+    {"id":{"name":"o_Slope","path":"objects/o_Slope/o_Slope.yy",},"order":3,},
     {"id":{"name":"s_Slope","path":"sprites/s_Slope/s_Slope.yy",},"order":1,},
     {"id":{"name":"bg_Lines","path":"sprites/bg_Lines/bg_Lines.yy",},"order":0,},
     {"id":{"name":"TestingRoom","path":"rooms/TestingRoom/TestingRoom.yy",},"order":0,},
+    {"id":{"name":"o_Game","path":"objects/o_Game/o_Game.yy",},"order":2,},
+    {"id":{"name":"print","path":"scripts/print/print.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Linux","path":"options/linux/options_linux.yy",},
