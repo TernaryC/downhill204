@@ -4,7 +4,7 @@ if (keyboard_check(global.key[? "DOWN"])) {
     ducking = true;
 } else if (ducking) {
     if (ducktime > 10) {
-        vely = jumpVel;
+        vely = -ducktime* .3;
     }
     ducking = false;
 }
