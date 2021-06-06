@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite5",
-    "path": "sprites/Sprite5/Sprite5.yy",
+    "name": "s_Button_Options",
+    "path": "sprites/s_Button_Options/s_Button_Options.yy",
   },
   "solid": false,
   "visible": true,

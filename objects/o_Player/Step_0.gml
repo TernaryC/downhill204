@@ -1,7 +1,8 @@
 event_user(0); //Get Input
 
-if (ducking ) {
-	if(ducktime <100)ducktime++;}
+if (ducking) {
+	if (ducktime < 100) ducktime++;
+}
 else ducktime = 0;
 
 
