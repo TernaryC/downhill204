@@ -3,8 +3,9 @@
 if (keyboard_check(global.key[? "DOWN"])) {
     ducking = true;
 } else if (ducking) {
-    if (ducktime > 10) {
-        vely = -ducktime * 0.3;
+    if (ducktime > jumpThreshold) {
+        //Jump
+        vely = map(ducktime, jumpThreshold, 50, -10, -23);
     }
     ducking = false;
 }

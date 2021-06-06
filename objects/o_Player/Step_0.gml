@@ -1,9 +1,9 @@
-event_user(0); //Get Input
+event_user(0); /* Get Input */
 
+//While ducking, ducktime increases
 if (ducking) {
-	if (ducktime < 100) ducktime++;
+	if (ducktime < 50) ducktime++;
 }
 else ducktime = 0;
 
-
-event_user(1); //Gravity and Physics
+event_user(1); /* Gravity and Physics */
