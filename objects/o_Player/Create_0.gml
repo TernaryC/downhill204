@@ -11,3 +11,4 @@ vely = 0;
 jumpVel = -10; //Default jump speed
 
 jumpThreshold = 15; //Point at which jumping is possible
+
