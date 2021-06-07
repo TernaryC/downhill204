@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_first_particle",
+  "name": "o_particleSystem",
   "tags": [],
   "resourceType": "GMObject",
 }
