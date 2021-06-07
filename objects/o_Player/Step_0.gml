@@ -7,3 +7,5 @@ if (ducking) {
 else ducktime = 0;
 
 event_user(1); /* Gravity and Physics */
+
+
