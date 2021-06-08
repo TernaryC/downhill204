@@ -20,7 +20,6 @@ tricking = false;
 particleCounter = 0
 isInvinc = false
 InvincCounter = 0
-jumpVel = -10; //Default jump speed
 
 //Movement Variables
 vely = 0;
