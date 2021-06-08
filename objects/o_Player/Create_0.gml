@@ -17,6 +17,7 @@ trickTotal = 0;
 trickLimit = -1;
 tricking = false;
 
+particleCounter = 0
 isInvinc = false
 InvincCounter = 0
 jumpVel = -10; //Default jump speed
