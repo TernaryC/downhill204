@@ -5,5 +5,12 @@ if (trickTime > trickLimit) {
 	trickLimit = 0;
 }
 if (!inAir and !tricking) {
-	trickTotal = 0
+	if (global.combo != 0) {
+		global.points += global.combo;
+		global.combo = 0;
+		ds_list_clear(global.tricks);
+		global.points += floor(trickTotal / 1500) * 100
+	}
+	
+	trickTotal = 0;
 }

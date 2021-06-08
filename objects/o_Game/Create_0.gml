@@ -38,17 +38,31 @@ global.terminal = 10;  //Terminal Velocity
 
 global.speed = 7;      //Speed of skater
 
+global.combo = 0;
+global.points = 0;
+
 //List to store past tricks in
 global.tricks = ds_list_create();
 global.lastTrick = "";
 
-//Map of trick lengths, by name
-global.limits = ds_map_create();
-global.limits[? "Ollie"]    = 15;
-global.limits[? "Kickflip"] = 15;
-global.limits[? "Indy"]     = 20;
-global.limits[? "Melon"]    = 20;
-global.limits[? "Tailgrab"] = 25;
-global.limits[? "Nosegrab"] = 25;
-global.limits[? "Airwalk"]  = 35;
+//Map of trick information, by name
+global.trickdata = ds_map_create();
+//Data:            Name                Length, Score
+global.trickdata[? "Ollie"]         = [15,     100];
+global.trickdata[? "Kickflip"]      = [15,     200];
+global.trickdata[? "Indy"]          = [20,     300];
+global.trickdata[? "Melon"]         = [20,     300];
+global.trickdata[? "Tailgrab"]      = [25,     300];
+global.trickdata[? "Nosegrab"]      = [25,     300];
+global.trickdata[? "Airwalk"]       = [35,     500];
+global.trickdata[? "Japan"]         = [35,     500];
+global.trickdata[? "Benihana"]      = [35,     500];
+global.trickdata[? "Pop Shove-it"]  = [35,     500];
+global.trickdata[? "Crossbone"]     = [35,     500];
+global.trickdata[? "Nosebone"]      = [35,     500];
+global.trickdata[? "Heelflip"]      = [35,     500];
+global.trickdata[? "Madonna"]       = [35,     500];
+global.trickdata[? "Impossible"]    = [35,     500];
+global.trickdata[? "Weedle"]        = [35,     500];
+global.trickdata[? "Sal Flip"]      = [35,     500];
 

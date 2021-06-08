@@ -1,3 +1,6 @@
+if (duckLimit == -1) duckLimit = global.trickdata[? "Ollie"][0];
+if (kflipLimit == -1) kflipLimit = global.trickdata[? "Kickflip"][0];
+
 event_user(0); /* Get Input */
 
 //While ducking, duckTime increases

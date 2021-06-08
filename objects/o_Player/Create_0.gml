@@ -6,6 +6,8 @@ image_yscale = 128/32;
 //Gameplay Variables
 ducking = false;
 duckTime = 0;
+duckLimit = -1;
+kflipLimit = -1;
 kflipping = false;
 kflipTime = 0;
 
@@ -19,9 +21,15 @@ tricking = false;
 vely = 0;
 
 self.trick = function (trickName) {
+	if (tricking and trickTime <= trickLimit / 4) return;
 	tricking = true;
 	trickTime = 0;
-	trickLimit = global.limits[? trickName];
+	trickLimit = global.trickdata[? trickName][0];
 	ds_list_add(global.tricks, trickName);
 	global.lastTrick = trickName;
+	
+	global.combo += global.trickdata[? trickName][1];
+	var len = ds_list_size(global.tricks)
+	if (len == 5) global.combo += 500
+	if (len == 10) global.combo += 1000
 }
