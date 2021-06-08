@@ -4,3 +4,4 @@ if (not layer_exists("Obstacles")) {
 }
 
 spawn_timer = 0
+
