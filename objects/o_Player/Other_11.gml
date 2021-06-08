@@ -13,6 +13,7 @@ if (o_Slope.getCollision(self) and vely > 0) {
 		part_particles_create(global.system, x-16, y-10, global.PartSmoke, 5);
 	}
     vely = 0;
+    inAir = false;
 } 
 
 //Increase y-velocity by gravity, cap at global.terminal

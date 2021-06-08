@@ -3,14 +3,37 @@ image_speed = 0;
 image_xscale = 64/16;
 image_yscale = 128/32;
 
+//Gameplay Variables
 ducking = false;
-ducktime = 0;
-particleCounter = 0
-vely = 0;
+duckTime = 0;
+duckLimit = -1;
+kflipLimit = -1;
+kflipping = false;
+kflipTime = 0;
+
+inAir = true;
+trickTime = 0;
+trickTotal = 0;
+trickLimit = -1;
+tricking = false;
 
 isInvinc = false
 InvincCounter = 0
 jumpVel = -10; //Default jump speed
 
-jumpThreshold = 15; //Point at which jumping is possible
+//Movement Variables
+vely = 0;
 
+self.trick = function (trickName) {
+	if (tricking and trickTime <= trickLimit / 4) return;
+	tricking = true;
+	trickTime = 0;
+	trickLimit = global.trickdata[? trickName][0];
+	ds_list_add(global.tricks, trickName);
+	global.lastTrick = trickName;
+
+	global.combo += global.trickdata[? trickName][1];
+	var len = ds_list_size(global.tricks)
+	if (len == 5) global.combo += 500
+	if (len == 10) global.combo += 1000
+}
