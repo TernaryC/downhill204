@@ -1,12 +1,10 @@
 draw_self();
 if (tricking) {
 	switch (global.lastTrick) {
-		case "Kickflip":
-			setSprite(s_Skater_kFlip);
-			break;
-		case "Ollie":
-			setSprite(s_Skater_Hop);
-			break;
+		case "Kickflip": setSprite(s_Skater_kFlip); break;
+		case "Ollie":    setSprite(s_Skater_Hop);   break;
+		case "Indy":     setSprite(s_Skater_Indy);  break;
+		case "Melon":    setSprite(s_Skater_Melon); break;
 	}
 } else {
 	if (!inAir) {

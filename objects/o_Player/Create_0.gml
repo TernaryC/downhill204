@@ -14,6 +14,7 @@ inAir = true;
 trickTime = 0;
 trickTotal = 0;
 trickLimit = -1;
+trickTrans = -1;
 tricking = false;
 
 particleCounter = 0
@@ -25,10 +26,11 @@ vely = 0;
 mustLand = false;
 
 self.trick = function (trickName) {
-	if (tricking and trickTime <= trickLimit / 4) return;
+	if (tricking and trickTime <= trickTrans / 2) return;
 	tricking = true;
 	trickTime = 0;
 	trickLimit = global.trickdata[? trickName][0];
+	trickTrans = global.trickdata[? trickName][2];
 	ds_list_add(global.tricks, trickName);
 	global.lastTrick = trickName;
 
@@ -41,7 +43,10 @@ self.trick = function (trickName) {
 }
 
 self.setSprite = function (sprite) {
-	if (sprite_index != sprite) sprite_index = sprite;
+	if (sprite_index != sprite) {
+		sprite_index = sprite;
+		image_index = 0;
+	}
 }
 
 self.damage = function () {

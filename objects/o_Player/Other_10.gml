@@ -24,7 +24,7 @@ if (!inAir) {
 	}
 } else {
 	if (o_Game.checkKey("DOWN", 0)) {
-		if (trickTime < (trickLimit / 2)) {
+		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Tailgrab")
 				trick("Airwalk");
 			else if (global.lastTrick == "Nosegrab")
@@ -33,7 +33,7 @@ if (!inAir) {
 		} else trick("Melon");
 	}
 	if (o_Game.checkKey("LEFT", 0)) {
-		if (trickTime < (trickLimit / 2)) {
+		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Tailgrab")
 				trick("Heelflip");
 			else if (global.lastTrick == "Nosegrab")
@@ -44,7 +44,7 @@ if (!inAir) {
 		} else trick("Tailgrab");
 	}
 	if (o_Game.checkKey("RIGHT", 0)) {
-		if (trickTime < (trickLimit / 2)) {
+		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Tailgrab")
 				trick("Impossible");
 			else if (global.lastTrick == "Nosegrab")
@@ -55,7 +55,7 @@ if (!inAir) {
 		} else trick("Nosegrab");
 	}
 	if (o_Game.checkKey("UP", 0)) {
-		if (trickTime < (trickLimit / 2)) {
+		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Tailgrab")
 				trick("Madonna");
 			else if (global.lastTrick == "Nosegrab")
