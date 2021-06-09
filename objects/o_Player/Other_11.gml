@@ -1,14 +1,11 @@
 /// @description Gravity and Physics
 
-
+//Logic for platforms 
 var myObject = instance_place(x, y, o_Platform)
-
 if myObject != noone and vely>0 {
-	print("myObject.y:")
-	print(myObject.y)
-	print("player.y:")
-	print(y)
+	
 	inAir = false;
+	
 }
 else y += vely; 
 
