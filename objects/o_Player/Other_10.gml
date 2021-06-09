@@ -9,6 +9,7 @@ if (!inAir) {
 	        //Jump
 	        vely = map(duckTime, thres, 50, -10, -23);
 	        inAir = true;
+			mustLand = true;
 	        trick("Ollie");
 	    }
 	    ducking = false;
