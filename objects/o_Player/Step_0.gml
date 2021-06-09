@@ -10,7 +10,7 @@ if (ducking) {
 	if (duckTime < 50) duckTime++;
 }
 else duckTime = 0;
-if (duckTime == 40){
+if (duckTime == 40) {
 	part_particles_create(global.system, x, y, global.PartSuccessR, 3);
 	part_particles_create(global.system, x, y, global.PartSuccessL, 3);
 }
@@ -28,9 +28,10 @@ if (tricking) {
 }
 
 event_user(1); /* Gravity and Physics */
+
 //creates the particles when touching ground
-particleCounter++
-if (particleCounter == 30){
+particleCounter++;
+if (particleCounter == 30) {
 		part_particles_create(global.system, x-16, y-10, global.PartTrail, 1);
-		particleCounter = 0
+		particleCounter = 0;
 }
