@@ -34,6 +34,7 @@
     {"id":{"name":"s_Skater_Tail","path":"sprites/s_Skater_Tail/s_Skater_Tail.yy",},"order":7,},
     {"id":{"name":"TestingRoom","path":"rooms/TestingRoom/TestingRoom.yy",},"order":0,},
     {"id":{"name":"s_Skater","path":"sprites/s_Skater/s_Skater.yy",},"order":0,},
+    {"id":{"name":"s_Slope2","path":"sprites/s_Slope2/s_Slope2.yy",},"order":9,},
     {"id":{"name":"o_Game","path":"objects/o_Game/o_Game.yy",},"order":2,},
     {"id":{"name":"s_Paint_Stack","path":"sprites/s_Paint_Stack/s_Paint_Stack.yy",},"order":4,},
     {"id":{"name":"s_Skater_Duck","path":"sprites/s_Skater_Duck/s_Skater_Duck.yy",},"order":1,},
