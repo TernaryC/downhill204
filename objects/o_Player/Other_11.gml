@@ -1,11 +1,10 @@
 /// @description Gravity and Physics
 
 //Logic for platforms 
-var myObject = instance_place(x, y, o_Platform)
-//checks to see if the object it's on is a platform
-if myObject != noone and vely>0 {
-	if myObject.isRamp{
-		y= y-1
+var myObject = instance_place(x, y, o_Platform);
+if (myObject != noone and vely > 0) {
+	if (myObject.isRamp) {
+		y = y - 1;
 	}
 	if (vely != global.gravity){
 			part_particles_create(global.system, x-16, y-10, global.PartSmoke, 5);
@@ -30,7 +29,10 @@ else{
 	    inAir = false;
 	    if (tricking) event_user(2);
 	}
-}
+    vely = 0;
+    inAir = false;
+    event_user(3);
+} 
 
 //Increase y-velocity by gravity, cap at global.terminal
 vely += global.gravity;
