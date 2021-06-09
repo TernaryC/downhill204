@@ -2,7 +2,8 @@
 if (trickTime > trickLimit) {
 	tricking = false;
 	trickTime = 0;
-	trickLimit = 0;
+	trickLimit = -1;
+	trickTrans = -1;
 }
 if (!inAir and !tricking) {
 	if (global.combo != 0) {
@@ -17,5 +18,6 @@ if (!inAir and !tricking) {
 if (!inAir and tricking) {
 	if (global.lastTrick != "Kickflip" and global.lastTrick != "Ollie") {
 		damage();
+		tricking = false;
 	}
 }

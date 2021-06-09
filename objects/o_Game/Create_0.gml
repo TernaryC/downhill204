@@ -48,21 +48,22 @@ global.lastTrick = "";
 
 //Map of trick information, by name
 global.trickdata = ds_map_create();
-//Data:            Name                Length, Score
-global.trickdata[? "Ollie"]         = [15,     100];
-global.trickdata[? "Kickflip"]      = [15,     200];
-global.trickdata[? "Indy"]          = [20,     300];
-global.trickdata[? "Melon"]         = [20,     300];
-global.trickdata[? "Tailgrab"]      = [25,     300];
-global.trickdata[? "Nosegrab"]      = [25,     300];
-global.trickdata[? "Airwalk"]       = [35,     500];
-global.trickdata[? "Japan"]         = [35,     500];
-global.trickdata[? "Benihana"]      = [35,     500];
-global.trickdata[? "Pop Shove-it"]  = [35,     500];
-global.trickdata[? "Crossbone"]     = [35,     500];
-global.trickdata[? "Nosebone"]      = [35,     500];
-global.trickdata[? "Heelflip"]      = [35,     500];
-global.trickdata[? "Madonna"]       = [35,     500];
-global.trickdata[? "Impossible"]    = [35,     500];
-global.trickdata[? "Weedle"]        = [35,     500];
-global.trickdata[? "Sal Flip"]      = [35,     500];
+//Data:            Name                Length, Score, Limit
+global.trickdata[? "Ollie"]         = [15,     100,    0];
+global.trickdata[? "Kickflip"]      = [30,     200,    0];
+global.trickdata[? "Indy"]          = [35,     300,   20];
+global.trickdata[? "Melon"]         = [35,     300,   25];
+global.trickdata[? "Tailgrab"]      = [ 0,     300,    0];
+global.trickdata[? "Nosegrab"]      = [ 0,     300,    0];
+global.trickdata[? "Airwalk"]       = [ 0,     500,    0];
+global.trickdata[? "Japan"]         = [ 0,     500,    0];
+global.trickdata[? "Benihana"]      = [ 0,     500,    0];
+global.trickdata[? "Pop Shove-it"]  = [ 0,     500,    0];
+global.trickdata[? "Crossbone"]     = [ 0,     500,    0];
+global.trickdata[? "Nosebone"]      = [ 0,     500,    0];
+global.trickdata[? "Heelflip"]      = [ 0,     500,    0];
+global.trickdata[? "Madonna"]       = [ 0,     500,    0];
+global.trickdata[? "Impossible"]    = [ 0,     500,    0];
+global.trickdata[? "Weedle"]        = [ 0,     500,    0];
+global.trickdata[? "Sal Flip"]      = [ 0,     500,    0];
+

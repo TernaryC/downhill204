@@ -12,6 +12,7 @@ if (o_Slope.getCollision(self) and vely > 0) {
 	}
     vely = 0;
     inAir = false;
+    if (tricking) event_user(2);
 } 
 
 //Increase y-velocity by gravity, cap at global.terminal
