@@ -61,7 +61,7 @@ if (!inAir) {
 			else if (global.lastTrick == "Nosegrab")
 				trick("Japan");
 			else if (global.lastTrick == "Indy")
-				trick("Pop Shove-it");
+				trick("Shove");
 			else trick("Indy");
 		} else trick("Indy");
 	}

@@ -5,6 +5,9 @@ if (tricking) {
 		case "Ollie":    setSprite(s_Skater_Hop);   break;
 		case "Indy":     setSprite(s_Skater_Indy);  break;
 		case "Melon":    setSprite(s_Skater_Melon); break;
+		case "Nosegrab": setSprite(s_Skater_Nose);  break;
+		case "Tailgrab": setSprite(s_Skater_Tail);  break;
+		case "Shove":    setSprite(s_Skater_Shove); break;
 	}
 } else {
 	if (!inAir) {
