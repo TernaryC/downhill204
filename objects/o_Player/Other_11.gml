@@ -1,8 +1,17 @@
 /// @description Gravity and Physics
 
-y += vely; 
+//Logic for platforms 
+var myObject = instance_place(x, y, o_Platform)
+if myObject != noone and vely>0 {
+	if myObject.isRamp{
+		y= y-1
+	}
+	inAir = false;
+	
+}
+else y += vely; 
 
-if (o_Slope.getCollision(self) and vely > 0) {
+if ((o_Slope.getCollision(self)) and vely > 0) {
     //If moving down and hit slope, snap to slope
 	y = o_Slope.getIntersection(x);
 	

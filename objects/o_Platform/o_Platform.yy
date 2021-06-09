@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_Block",
-    "path": "sprites/s_Block/s_Block.yy",
+    "name": "s_platform",
+    "path": "sprites/s_platform/s_platform.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,7 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
-    {"varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"isDynamic","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":3,"value":"false","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"isRamp","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [],
   "parent": {
@@ -32,7 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_Block",
+  "name": "o_Platform",
   "tags": [],
   "resourceType": "GMObject",
 }

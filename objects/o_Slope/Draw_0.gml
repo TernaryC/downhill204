@@ -1,6 +1,6 @@
 //Debug line to visualize slope
-draw_set_color(c_lime);
-draw_line(x, y, sx, sy);
+//draw_set_color(c_lime);
+//draw_line(x, y, sx, sy);
 
 /*
 draw_set_color(c_red);
