@@ -1,8 +1,18 @@
 /// @description Gravity and Physics
 
-y += vely; 
 
-if (o_Slope.getCollision(self) and vely > 0) {
+var myObject = instance_place(x, y, o_Platform)
+
+if myObject != noone and vely>0 {
+	print("myObject.y:")
+	print(myObject.y)
+	print("player.y:")
+	print(y)
+	inAir = false;
+}
+else y += vely; 
+
+if ((o_Slope.getCollision(self)) and vely > 0) {
     //If moving down and hit slope, snap to slope
 	y = o_Slope.getIntersection(x);
 	
