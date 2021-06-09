@@ -28,6 +28,7 @@ if (tricking) {
 }
 
 event_user(1); /* Gravity and Physics */
+event_user(2);
 
 //creates the particles when touching ground
 particleCounter++;
