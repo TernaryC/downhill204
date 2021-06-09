@@ -16,6 +16,10 @@ trickTotal = 0;
 trickLimit = -1;
 tricking = false;
 
+particleCounter = 0
+isInvinc = false
+InvincCounter = 0
+
 //Movement Variables
 vely = 0;
 
@@ -26,7 +30,7 @@ self.trick = function (trickName) {
 	trickLimit = global.trickdata[? trickName][0];
 	ds_list_add(global.tricks, trickName);
 	global.lastTrick = trickName;
-	
+
 	global.combo += global.trickdata[? trickName][1];
 	var len = ds_list_size(global.tricks)
 	if (len == 5) global.combo += 500

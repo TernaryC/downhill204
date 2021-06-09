@@ -16,13 +16,13 @@ ds_list_add(global.key[? "UP"], vk_up);
 
 function checkKey (keyName, aval) {
     if (aval == undefined) aval = 1;
-    
+
     //keyName is the name of the binding to be checked
     //aval is how the key should be checked:
     // 0 - Only initial press
     // 1 - If pressed or while held (default)
     // 2 - Only final release
-    
+
     var keys = global.key[? keyName];
     for (var i = 0; i < ds_list_size(keys); i++) {
         if (aval == 1 and keyboard_check(keys[| i])) return true;
@@ -40,6 +40,7 @@ global.speed = 7;      //Speed of skater
 
 global.combo = 0;
 global.points = 0;
+
 
 //List to store past tricks in
 global.tricks = ds_list_create();
@@ -65,4 +66,3 @@ global.trickdata[? "Madonna"]       = [35,     500];
 global.trickdata[? "Impossible"]    = [35,     500];
 global.trickdata[? "Weedle"]        = [35,     500];
 global.trickdata[? "Sal Flip"]      = [35,     500];
-
