@@ -1,6 +1,6 @@
 draw_self();
-image_index = 0;
-if (duckTime > duckLimit) image_index = 1;
+sprite_index = s_Skater;
+if (duckTime > duckLimit) sprite_index = s_Skater_Duck;
 
 //Debug counter for duckTime
 draw_set_color(c_white);

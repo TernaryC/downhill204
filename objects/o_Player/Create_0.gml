@@ -1,4 +1,3 @@
-image_speed = 0;
 //Rescale image
 image_xscale = 64/16;
 image_yscale = 128/32;
