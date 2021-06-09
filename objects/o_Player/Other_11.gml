@@ -3,7 +3,9 @@
 //Logic for platforms 
 var myObject = instance_place(x, y, o_Platform)
 if myObject != noone and vely>0 {
-	
+	if myObject.isRamp{
+		y= y-1
+	}
 	inAir = false;
 	
 }
