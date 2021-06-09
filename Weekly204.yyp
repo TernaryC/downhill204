@@ -30,6 +30,7 @@
     {"id":{"name":"s_Skater_Melon","path":"sprites/s_Skater_Melon/s_Skater_Melon.yy",},"order":5,},
     {"id":{"name":"s_Skater_Land","path":"sprites/s_Skater_Land/s_Skater_Land.yy",},"order":4,},
     {"id":{"name":"OptionsRoom","path":"rooms/OptionsRoom/OptionsRoom.yy",},"order":2,},
+    {"id":{"name":"s_Skater_Imp","path":"sprites/s_Skater_Imp/s_Skater_Imp.yy",},"order":12,},
     {"id":{"name":"print","path":"scripts/print/print.yy",},"order":0,},
     {"id":{"name":"s_Skater_Madonna","path":"sprites/s_Skater_Madonna/s_Skater_Madonna.yy",},"order":11,},
     {"id":{"name":"o_ParticleSystem","path":"objects/o_ParticleSystem/o_ParticleSystem.yy",},"order":9,},

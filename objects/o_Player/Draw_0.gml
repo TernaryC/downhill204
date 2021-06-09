@@ -11,6 +11,7 @@ if (tricking) {
 		case "Fingerflip": setSprite(s_Skater_Finger); break;
 		case "Airwalk":    setSprite(s_Skater_Airwalk); break;
 		case "Madonna":    setSprite(s_Skater_Madonna); break;
+		case "Impossible": setSprite(s_Skater_Imp); break;
 	}
 } else {
 	if (!inAir) {

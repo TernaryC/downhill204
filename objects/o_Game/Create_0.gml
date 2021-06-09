@@ -52,12 +52,13 @@ global.trickdata = ds_map_create();
 global.trickdata[? "Ollie"]         = [15,     100,    0];
 global.trickdata[? "Kickflip"]      = [30,     200,    0];
 global.trickdata[? "Indy"]          = [35,     350,   25];
-global.trickdata[? "Melon"]         = [35,     400,   30];
+global.trickdata[? "Melon"]         = [35,     400,   20];
 global.trickdata[? "Tailgrab"]      = [35,     300,   20];
 global.trickdata[? "Nosegrab"]      = [35,     300,   20];
-global.trickdata[? "Airwalk"]       = [55,     550,   55];
+global.trickdata[? "Airwalk"]       = [55,     650,   55];
 global.trickdata[? "Shove"]         = [35,     450,   35];
 global.trickdata[? "Fingerflip"]    = [35,     450,   35];
-global.trickdata[? "Madonna"]       = [35,     450,   35];
+global.trickdata[? "Madonna"]       = [40,     500,   40];
+global.trickdata[? "Impossible"]    = [40,     500,   40];
 global.trickdata[? ""]              = [-1,       0,   -1];
 
