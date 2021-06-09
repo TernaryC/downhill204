@@ -34,7 +34,9 @@ self.trick = function (trickName) {
 	ds_list_add(global.tricks, trickName);
 	global.lastTrick = trickName;
 	
-	if (vely > 0) vely -= 15;
+	if (trickName != "Kickflip" and trickName != "Ollie") {
+		if (vely > 0) vely -= 12;
+	}
 
 	global.combo += global.trickdata[? trickName][1];
 	var len = ds_list_size(global.tricks);
