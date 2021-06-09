@@ -50,7 +50,9 @@ self.setSprite = function (sprite) {
 }
 
 self.damage = function () {
+	
 	if (isInvinc == false) {
+		part_particles_create(global.system, x-16, y-48, global.Blood, 3);
 		isInvinc = true;
 		InvincCounter = 0;
 	}

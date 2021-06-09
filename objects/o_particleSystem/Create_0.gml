@@ -59,3 +59,19 @@ part_type_orientation(type,0,0,0,0,true);
 part_type_life(type,300,300);
 part_type_blend(type,false);
 global.PartSuccessL = type
+
+
+
+type = part_type_create();
+part_type_shape(type, pt_shape_square);
+part_type_scale(type,1,1);
+part_type_size(type,0.10,0.15,-.001,0);
+part_type_color1(type,c_red);
+part_type_alpha2(type,1,0.75);
+part_type_speed(type,0.1,0.5,.1,0);
+part_type_direction(type,135,0,0,0);
+part_type_gravity(type,.09,270);
+part_type_orientation(type,0,0,0,0,true);
+part_type_life(type,300,300);
+part_type_blend(type,false);
+global.Blood = type
