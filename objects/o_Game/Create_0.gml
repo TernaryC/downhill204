@@ -51,19 +51,13 @@ global.trickdata = ds_map_create();
 //Data:            Name                Length, Score, Limit
 global.trickdata[? "Ollie"]         = [15,     100,    0];
 global.trickdata[? "Kickflip"]      = [30,     200,    0];
-global.trickdata[? "Indy"]          = [35,     300,   25];
-global.trickdata[? "Melon"]         = [35,     300,   30];
+global.trickdata[? "Indy"]          = [35,     350,   25];
+global.trickdata[? "Melon"]         = [35,     400,   30];
 global.trickdata[? "Tailgrab"]      = [35,     300,   20];
 global.trickdata[? "Nosegrab"]      = [35,     300,   20];
-global.trickdata[? "Airwalk"]       = [ 0,     500,    0];
-global.trickdata[? "Japan"]         = [ 0,     500,    0];
-global.trickdata[? "Benihana"]      = [ 0,     500,    0];
-global.trickdata[? "Shove"]         = [35,     500,   35];
-global.trickdata[? "Crossbone"]     = [ 0,     500,    0];
-global.trickdata[? "Nosebone"]      = [ 0,     500,    0];
-global.trickdata[? "Heelflip"]      = [ 0,     500,    0];
-global.trickdata[? "Madonna"]       = [ 0,     500,    0];
-global.trickdata[? "Impossible"]    = [ 0,     500,    0];
-global.trickdata[? "Weedle"]        = [ 0,     500,    0];
-global.trickdata[? "Sal Flip"]      = [ 0,     500,    0];
+global.trickdata[? "Airwalk"]       = [55,     550,   55];
+global.trickdata[? "Shove"]         = [35,     450,   35];
+global.trickdata[? "Fingerflip"]    = [35,     450,   35];
+global.trickdata[? "Madonna"]       = [35,     450,   35];
+global.trickdata[? ""]              = [-1,       0,   -1];
 

@@ -35,31 +35,31 @@ if (!inAir) {
 	if (o_Game.checkKey("LEFT", 0)) {
 		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Tailgrab")
-				trick("Heelflip");
+				trick("");
 			else if (global.lastTrick == "Nosegrab")
-				trick("Weedle");
+				trick("Madonna");
 			else if (global.lastTrick == "Melon")
-				trick("Sal Flip");
+				trick("");
 			else trick("Tailgrab");
 		} else trick("Tailgrab");
 	}
 	if (o_Game.checkKey("RIGHT", 0)) {
 		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Tailgrab")
-				trick("Impossible");
+				trick("");
 			else if (global.lastTrick == "Nosegrab")
-				trick("Nosebone");
+				trick("Airwalk");
 			else if (global.lastTrick == "Melon")
-				trick("Crossbone");
+				trick("");
 			else trick("Nosegrab");
 		} else trick("Nosegrab");
 	}
 	if (o_Game.checkKey("UP", 0)) {
 		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Tailgrab")
-				trick("Madonna");
+				trick("");
 			else if (global.lastTrick == "Nosegrab")
-				trick("Japan");
+				trick("Fingerflip");
 			else if (global.lastTrick == "Indy")
 				trick("Shove");
 			else trick("Indy");

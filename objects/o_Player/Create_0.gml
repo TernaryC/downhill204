@@ -33,6 +33,8 @@ self.trick = function (trickName) {
 	trickTrans = global.trickdata[? trickName][2];
 	ds_list_add(global.tricks, trickName);
 	global.lastTrick = trickName;
+	
+	if (vely > 0) vely -= 5;
 
 	global.combo += global.trickdata[? trickName][1];
 	var len = ds_list_size(global.tricks);
