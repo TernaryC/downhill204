@@ -29,9 +29,7 @@ else{
 	    inAir = false;
 	    if (tricking) event_user(2);
 	}
-    vely = 0;
-    inAir = false;
-    event_user(3);
+    
 } 
 
 //Increase y-velocity by gravity, cap at global.terminal
