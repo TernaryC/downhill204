@@ -37,4 +37,39 @@ if (!global.paused) {
 		part_particles_create(global.system, x-16, y-10, global.PartTrail, 1);
 		particleCounter = 0;
 	}
+	audio_pause_sound(PauseMusic)
+	isPlayingPauseMusic = false
+	if !isPlayingGameplayMusic{ 
+		if audio_is_paused(GamePlayMusic){
+			audio_resume_sound(GamePlayMusic)
+		}
+		else{audio_play_sound(GamePlayMusic,1,999)
+		}
+		isPlayingGameplayMusic = true
+	}
+}if (!global.paused and !inAir) {
+	if !isPlayingRolling{ 
+		if audio_is_paused(so_rolling){
+			audio_resume_sound(so_rolling)
+		}
+		else{audio_play_sound(so_rolling,1,999)
+		}
+		isPlayingRolling = true
+	}
+}
+if (!global.paused and inAir) {
+	audio_pause_sound(so_rolling)
+	isPlayingRolling = false
+}
+if(global.paused){
+	audio_pause_sound(GamePlayMusic)
+	isPlayingGameplayMusic = false
+	if !isPlayingPauseMusic{ 
+		if audio_is_paused(PauseMusic){
+			audio_resume_sound(PauseMusic)
+		}
+		else{audio_play_sound(PauseMusic,1,999)
+		}
+		isPlayingPauseMusic = true
+	}
 }

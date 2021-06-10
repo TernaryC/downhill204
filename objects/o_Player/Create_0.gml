@@ -2,6 +2,11 @@
 image_xscale = 64/16;
 image_yscale = 128/32;
 
+//Sound
+isPlayingRolling = false
+isPlayingGameplayMusic = false
+isPlayingPauseMusic = false
+
 //Gameplay Variables
 ducking = false;
 duckTime = 0;
