@@ -7,7 +7,7 @@ if (!inAir) {
 		var thres = duckLimit
 	    if (duckTime > thres) {
 	        //Jump
-	        vely = map(duckTime, thres, 50, -10, -23);
+	        vely = map(duckTime, thres, 30, -10, -23);
 	        inAir = true;
 			mustLand = true;
 	        trick("Ollie");
@@ -28,7 +28,9 @@ if (!inAir) {
 		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Melon")
 				trick("Impossible");
-			else trick("Melon");
+			else if (global.lastTrick == "Tailgrab") {
+				trick("Slam");
+			} else trick("Melon");
 		} else trick("Melon");
 	}
 	if (o_Game.checkKey("LEFT", 0)) {

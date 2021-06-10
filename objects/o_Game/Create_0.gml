@@ -49,8 +49,8 @@ global.lastTrick = "";
 //Map of trick information, by name
 global.trickdata = ds_map_create();
 //Data:            Name                Length, Score, Limit
-global.trickdata[? "Ollie"]         = [15,     100,    0];
-global.trickdata[? "Kickflip"]      = [30,     200,    0];
+global.trickdata[? "Ollie"]         = [10,     100,    0];
+global.trickdata[? "Kickflip"]      = [10,     200,    0];
 global.trickdata[? "Indy"]          = [35,     350,   25];
 global.trickdata[? "Melon"]         = [35,     400,   20];
 global.trickdata[? "Tailgrab"]      = [35,     300,   20];
@@ -60,6 +60,23 @@ global.trickdata[? "Shove"]         = [35,     450,   35];
 global.trickdata[? "Fingerflip"]    = [35,     450,   35];
 global.trickdata[? "Madonna"]       = [40,     500,   40];
 global.trickdata[? "Impossible"]    = [40,     500,   40];
+global.trickdata[? "Slam"]          = [ 0,     200,    0];
 global.trickdata[? ""]              = [-1,       0,   -1];
 
 audio_play_sound(so_gamplayMusic,1,99)
+
+e_ui = $FF8844;
+e_white = $EEEEEE;
+e_color = [
+    $FF8844,
+    $FF7777,
+    $FF4499,
+    $EE44BB
+];
+e_ui_i = 0;
+e_ui_j = 0;
+e_ui_dir = 1;
+e_ui_step = 0.01;
+
+global.anim_lts = 1;
+global.anim_lt = false;

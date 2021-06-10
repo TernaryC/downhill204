@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Placeholders",
+    "path": "folders/Sprites/Placeholders.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_Player",

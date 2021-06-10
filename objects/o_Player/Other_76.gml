@@ -7,6 +7,11 @@ switch (event_data[? "message"]) {
 		
 		break;
 	case "Landing":
+		noTerminal = false;
 		mustLand = false;
+		break;
+	case "IFrameEnd":
+		isInvinc = false;
+		InvincCounter = 0;
 		break;
 }

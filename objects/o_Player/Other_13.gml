@@ -12,7 +12,10 @@ if (!inAir and !tricking) {
 	trickTotal = 0;
 }
 if (!inAir and tricking) {
-	if (global.lastTrick != "Kickflip" and global.lastTrick != "Ollie") {
+	if (global.lastTrick != "Kickflip" and
+		global.lastTrick != "Ollie" and
+		global.lastTrick != "Slam") {
+			
 		damage();
 		tricking = false;
 	}

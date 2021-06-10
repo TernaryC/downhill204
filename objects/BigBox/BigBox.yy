@@ -28,11 +28,11 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"propertyId":{"name":"isDynamic","path":"objects/o_Block/o_Block.yy",},"objectId":{"name":"o_Block","path":"objects/o_Block/o_Block.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"","path":"",},"objectId":{"name":"o_Block","path":"objects/o_Block/o_Block.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Placeholder",
+    "path": "folders/Objects/Placeholder.yy",
   },
   "resourceVersion": "1.0",
   "name": "BigBox",
