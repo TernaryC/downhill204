@@ -1,3 +1,5 @@
+anchor = noone;
+
 //Randomize Obstacle
 var spr = irandom_range(0, 4);
 switch (spr) {

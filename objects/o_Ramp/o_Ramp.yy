@@ -31,8 +31,8 @@
     {"propertyId":{"name":"isRamp","path":"objects/o_Platform/o_Platform.yy",},"objectId":{"name":"o_Platform","path":"objects/o_Platform/o_Platform.yy",},"value":"True","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Placeholder",
+    "path": "folders/Objects/Placeholder.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Ramp",

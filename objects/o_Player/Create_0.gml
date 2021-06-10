@@ -59,3 +59,19 @@ self.damage = function () {
 		InvincCounter = 0;
 	}
 }
+
+self.land = function (anchor) {
+	if (vely > 0) {
+	    //If moving down and hit slope, snap to slope
+		y = anchor.getIntersection(x);
+		
+		//creates the smoke particles when hitting the ground
+		if (vely != global.gravity){
+			part_particles_create(global.system, x-16, y-10, global.PartSmoke, 5);
+		}
+	    vely = 0;
+	    inAir = false;
+	    event_user(3);
+	} 
+}
+

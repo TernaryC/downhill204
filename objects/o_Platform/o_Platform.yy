@@ -28,8 +28,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Placeholder",
+    "path": "folders/Objects/Placeholder.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_Platform",
