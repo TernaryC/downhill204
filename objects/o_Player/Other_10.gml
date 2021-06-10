@@ -7,7 +7,7 @@ if (!inAir) {
 		var thres = duckLimit
 	    if (duckTime > thres) {
 	        //Jump
-	        vely = map(duckTime, thres, 30, -10, -23);
+	        vely = map(duckTime, thres, 30, -10, -21);
 	        inAir = true;
 			mustLand = true;
 	        trick("Ollie");

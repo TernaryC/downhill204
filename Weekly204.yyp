@@ -51,6 +51,7 @@
     {"id":{"name":"s_Skater_Slam_End","path":"sprites/s_Skater_Slam_End/s_Skater_Slam_End.yy",},"order":2,},
     {"id":{"name":"s_Skater_Slam","path":"sprites/s_Skater_Slam/s_Skater_Slam.yy",},"order":0,},
     {"id":{"name":"s_Skater_Land","path":"sprites/s_Skater_Land/s_Skater_Land.yy",},"order":4,},
+    {"id":{"name":"so_jumping","path":"sounds/so_jumping/so_jumping.yy",},"order":3,},
     {"id":{"name":"OptionsRoom","path":"rooms/OptionsRoom/OptionsRoom.yy",},"order":2,},
     {"id":{"name":"s_Skater_Imp","path":"sprites/s_Skater_Imp/s_Skater_Imp.yy",},"order":12,},
     {"id":{"name":"print","path":"scripts/print/print.yy",},"order":0,},

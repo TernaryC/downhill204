@@ -39,7 +39,7 @@ event_user(1); /* Gravity and Physics */
 
 //creates the particles when touching ground
 particleCounter++;
-if (particleCounter == 30) {
+if (particleCounter == log10(global.points)) {
 		part_particles_create(global.system, x-16, y-10, global.PartTrail, 1);
 		particleCounter = 0;
 }

@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.58,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "so_gamplayMusic.wav",
-  "duration": 331.1791,
+  "soundFile": "so_gamplayMusic.mp3",
+  "duration": 135.058044,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
