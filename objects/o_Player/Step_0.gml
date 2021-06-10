@@ -12,7 +12,7 @@ if (ducking) {
 else duckTime = 0;
 if (duckTime == 30) {
 	//part_particles_create(global.system, x, y, global.PartSuccessR, 3);
-	//part_particles_create(global.system, x, y, global.PartSuccessL, 3);
+	part_particles_create(global.system, x, y, global.PartSuccessL, 1);
 }
 
 if (kflipping) kflipTime++;
