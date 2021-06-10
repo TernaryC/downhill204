@@ -15,6 +15,7 @@
     {"id":{"name":"s_Dumpster","path":"sprites/s_Dumpster/s_Dumpster.yy",},"order":6,},
     {"id":{"name":"s_Skater_kFlip0","path":"sprites/s_Skater_kFlip0/s_Skater_kFlip0.yy",},"order":1,},
     {"id":{"name":"BigBox","path":"objects/BigBox/BigBox.yy",},"order":0,},
+    {"id":{"name":"so_trick","path":"sounds/so_trick/so_trick.yy",},"order":5,},
     {"id":{"name":"o_Camera","path":"objects/o_Camera/o_Camera.yy",},"order":6,},
     {"id":{"name":"s_Skater_Airwalk","path":"sprites/s_Skater_Airwalk/s_Skater_Airwalk.yy",},"order":10,},
     {"id":{"name":"s_Skater_kFlip","path":"sprites/s_Skater_kFlip/s_Skater_kFlip.yy",},"order":0,},
@@ -119,7 +120,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.560",
+    "IDEVersion": "2.3.2.556",
   },
   "resourceVersion": "1.4",
   "name": "Weekly204",

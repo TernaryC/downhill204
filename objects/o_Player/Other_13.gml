@@ -6,6 +6,8 @@ if (!inAir and !tricking) {
 		global.anim_st = true;
 		global.anim_stf();
 		
+		if (global.combo > 0) audio_play_sound(LandSound, 1, 0);
+		
 		global.anim_sca += global.combo;
 		global.combo = 0;
 		ds_list_clear(global.tricks);

@@ -54,6 +54,9 @@ self.trick = function (trickName) {
 	if (trickName == "Slam") {
 		slam();
 	}
+	if (global.trickdata[? trickName][1] > 400) {
+		audio_play_sound(so_trick,1,0);
+	}
 
 	global.combo += global.trickdata[? trickName][1];
 	var len = ds_list_size(global.tricks);

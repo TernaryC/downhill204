@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "LandSound.wav",
-  "duration": 0.408832,
+  "soundFile": "so_trick.wav",
+  "duration": 0.236429,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "LandSound",
+  "name": "so_trick",
   "tags": [],
   "resourceType": "GMSound",
 }
