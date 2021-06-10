@@ -60,5 +60,6 @@ global.trickdata[? "Shove"]         = [35,     450,   35];
 global.trickdata[? "Fingerflip"]    = [35,     450,   35];
 global.trickdata[? "Madonna"]       = [40,     500,   40];
 global.trickdata[? "Impossible"]    = [40,     500,   40];
+global.trickdata[? "Slam"]          = [ 0,     200,    0];
 global.trickdata[? ""]              = [-1,       0,   -1];
 

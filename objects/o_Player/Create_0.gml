@@ -24,8 +24,10 @@ InvincCounter = 0
 //Movement Variables
 vely = 0;
 mustLand = false;
+noTerminal = false;
 
 self.trick = function (trickName) {
+	if (noTerminal) return;
 	if (tricking and trickTime <= trickTrans / 2) return;
 	tricking = true;
 	trickTime = 0;
@@ -34,8 +36,14 @@ self.trick = function (trickName) {
 	ds_list_add(global.tricks, trickName);
 	global.lastTrick = trickName;
 	
-	if (trickName != "Kickflip" and trickName != "Ollie") {
+	if (trickName != "Kickflip" and
+		trickName != "Ollie" and
+		trickName != "Slam") {
+			
 		if (vely > 0) vely -= 12;
+	}
+	if (trickName == "Slam") {
+		slam();
 	}
 
 	global.combo += global.trickdata[? trickName][1];
@@ -63,7 +71,9 @@ self.damage = function () {
 self.land = function (anchor) {
 	if (vely > 0) {
 	    //If moving down and hit slope, snap to slope
-		y = anchor.getIntersection(x);
+		var ty = anchor.getIntersection(x);
+		if (ty != undefined) y = ty;
+		else return;
 		
 		//creates the smoke particles when hitting the ground
 		if (vely != global.gravity){
@@ -73,5 +83,10 @@ self.land = function (anchor) {
 	    inAir = false;
 	    event_user(3);
 	} 
+}
+
+self.slam = function () {
+	vely += 15;
+	noTerminal = true;
 }
 

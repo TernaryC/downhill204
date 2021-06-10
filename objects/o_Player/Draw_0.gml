@@ -12,13 +12,20 @@ if (tricking) {
 		case "Airwalk":    setSprite(s_Skater_Airwalk); break;
 		case "Madonna":    setSprite(s_Skater_Madonna); break;
 		case "Impossible": setSprite(s_Skater_Imp); break;
+		case "Slam":       setSprite(s_Skater_Slam_Start); break;
 	}
 } else {
 	if (!inAir) {
-		if (mustLand) setSprite(s_Skater_Land);
+		if (mustLand) {
+			if (noTerminal) setSprite(s_Skater_Slam_End);
+			else setSprite(s_Skater_Land);
+		}
 		else setSprite(s_Skater);
 	}
-	else setSprite(s_Skater_Ollie);
+	else {
+		if (noTerminal) setSprite(s_Skater_Slam);
+		else setSprite(s_Skater_Ollie);
+	}
 }
 if (duckTime > duckLimit) setSprite(s_Skater_Duck);
 if (duckTime > 40) setSprite(s_Skater_Deep);

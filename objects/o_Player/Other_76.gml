@@ -6,6 +6,7 @@ switch (event_data[? "message"]) {
 		event_user(2);
 		break;
 	case "Landing":
+		noTerminal = false;
 		mustLand = false;
 		break;
 }

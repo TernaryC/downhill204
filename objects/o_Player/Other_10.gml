@@ -27,7 +27,9 @@ if (!inAir) {
 		if (trickTime < trickTrans) {
 			if (global.lastTrick == "Melon")
 				trick("Impossible");
-			else trick("Melon");
+			else if (global.lastTrick == "Tailgrab") {
+				trick("Slam");
+			} else trick("Melon");
 		} else trick("Melon");
 	}
 	if (o_Game.checkKey("LEFT", 0)) {
