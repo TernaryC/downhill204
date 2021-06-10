@@ -33,7 +33,7 @@ self.trick = function (trickName) {
 	trickTime = 0;
 	trickLimit = global.trickdata[? trickName][0];
 	trickTrans = global.trickdata[? trickName][2];
-	ds_list_add(global.tricks, trickName);
+	ds_list_insert(global.tricks, 0, trickName);
 	global.lastTrick = trickName;
 	
 	if (trickName != "Kickflip" and

@@ -37,11 +37,13 @@ if (kflipTime > kflipLimit) setSprite(s_Skater_kFlip0);
 sprite_set_offset(sprite_index, 8, 29);
 
 //Debug counter for duckTime
+/*
 draw_set_color(c_white);
 draw_text(x + 32, y + 60, duckTime);
 draw_text(x + 32, y + 75, kflipTime);
 draw_text(x + 32, y - 40, inAir);
 draw_text(x + 32, y - 28, tricking);
+/**/
 
 //invincible frame display logic
 if (isInvinc == true) {
