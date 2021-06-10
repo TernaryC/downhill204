@@ -32,7 +32,6 @@ self.spawnBox = function () {
 }
 
 self.spawnBuild = function () {
-    print("Spawning...")
     var bx = room_width + 600;
     var by = o_Slope.getIntersection(bx);
     var plat = instance_create_layer(bx, by, "Platforms", o_Building);

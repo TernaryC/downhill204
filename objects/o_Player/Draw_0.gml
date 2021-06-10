@@ -1,4 +1,12 @@
 draw_self();
+
+if (global.paused) {
+	image_speed = 0;
+	sprite_set_offset(sprite_index, 8, 29);
+	return;
+} else {
+	image_speed = 1;
+}
 if (tricking) {
 	switch (global.lastTrick) {
 		case "Kickflip":   setSprite(s_Skater_kFlip); break;
@@ -34,6 +42,7 @@ if (tricking) {
 if (duckTime > duckLimit) setSprite(s_Skater_Duck);
 if (duckTime == 30) setSprite(s_Skater_Deep);
 if (kflipTime > kflipLimit) setSprite(s_Skater_kFlip0);
+
 sprite_set_offset(sprite_index, 8, 29);
 
 //Debug counter for duckTime

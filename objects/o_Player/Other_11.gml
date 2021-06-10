@@ -1,4 +1,6 @@
 /// @description Gravity and Physics
+if (global.paused) return;
+
 y += vely
 
 var landed = false;

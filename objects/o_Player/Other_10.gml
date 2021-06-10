@@ -1,4 +1,5 @@
 /// @description Get Input
+if (global.paused) return;
 
 if (!inAir) {
 	if (o_Game.checkKey("DOWN", 1)) {

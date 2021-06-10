@@ -14,10 +14,12 @@ var cy = _y + h / 2;
 var wx = _x + w;
 var hy = _y + h;
 
-draw_set_color(e_ui);
-draw_set_font(f_Sans42);
-draw_set_halign(fa_left);
-draw_text(_x + 10, hy - 30, global.points);
+if (!global.paused or global.timer > 0) {
+    draw_set_color(e_ui);
+    draw_set_font(f_Sans42);
+    draw_set_halign(fa_left);
+    draw_text(_x + 10, hy - 30, global.points);
+}
 
 draw_set_halign(fa_center);
 
@@ -53,6 +55,51 @@ if (global.combo > 0) {
     draw_text_transformed(cx, _y + 125,
                           string_upper(global.anim_sta[2]),
                           ltz, ltz, 0);
+}
+if (!global.paused or global.timer > 0) {
+    draw_set_halign(fa_left);
+    draw_set_font(f_Sans28);
+    draw_set_color(e_ui);
+    var time = "";
+    var sec = seconds(global.timer);
+    var mit = floor(sec / 60);
+    sec = sec - (mit * 60);
+    time += string(mit) + ":";
+    if (sec < 10) time += "0";
+    time += string(sec);
+    draw_text(_x + 10, _y + 30, time);
+}
+
+if (global.paused) {
+    draw_set_color($000000);
+    draw_set_alpha(0.5);
+    draw_rectangle(_x + 64, _y + 48, wx - 64, hy - 48, false);
+    draw_set_alpha(1);
+    
+    draw_set_halign(fa_center);
+    if (global.timer > 0) {
+        draw_set_color(e_white);
+        draw_set_font(f_Sans42);
+        draw_text(cx, _y + 104, "Perform Tricks Using");
+        draw_set_font(f_Sans28);
+        draw_text(cx - 112, cy - 48, "W\nA S D");
+        draw_text(cx + 112, cy - 48, "^\n< v >");
+        var msg = "to Begin";
+        if (global.begun) msg = "to Resume";
+        draw_text(cx, cy + 112, "Press Enter or Esc\n" + msg);
+    } else {
+        draw_set_color(e_ui);
+        draw_set_font(f_Sans42);
+        draw_text(cx, _y + 104, "GAME OVER");
+        draw_set_color(e_white);
+        draw_set_font(f_Sans18);
+        draw_text(cx, cy - 64, "You scored...");
+        draw_set_font(f_Sans42);
+        draw_text(cx, cy - 16, global.points);
+        draw_set_font(f_Sans28);
+        var msg = "to Restart";
+        draw_text(cx, cy + 112, "Press Enter or Esc\n" + msg);
+    }
 }
 
 /*

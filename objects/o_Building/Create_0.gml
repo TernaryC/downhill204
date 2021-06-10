@@ -1,4 +1,3 @@
-print("Created")
 length = 0;
 height = 0;
 

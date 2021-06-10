@@ -1,4 +1,6 @@
 /// @description End of Trick
+if (global.paused) return;
+
 if (event_data[? "event_type"] != "sprite event") return;
 switch (event_data[? "message"]) {
 	case "TrickEnd":

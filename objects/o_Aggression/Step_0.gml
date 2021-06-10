@@ -2,6 +2,7 @@
 if (!instance_exists(spawn_plat)) spawn_plat = noone;
 //if (spawn_plat != noone) print(spawn_plat);
 
+if (global.paused) return;
 spawn_timer++;
 if (spawn_timer % 40 == 0) {
     //Every 40 frames, maybe spawn something

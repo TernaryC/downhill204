@@ -66,7 +66,7 @@ self.setSprite = function (sprite) {
 }
 
 self.damage = function () {
-	global.combo = 0;
+	global.combo = -100;
 	if (isInvinc == false) {
 		isInvinc = true;
 		InvincCounter = 0;

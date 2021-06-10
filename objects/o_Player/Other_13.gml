@@ -1,4 +1,6 @@
 /// @description Ending Tricks
+if (global.paused) return;
+
 if (!inAir and !tricking) {
 	if (ds_list_size(global.tricks) > 0) {
 		global.anim_st = true;

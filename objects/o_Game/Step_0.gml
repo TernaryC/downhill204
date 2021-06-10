@@ -1,4 +1,37 @@
-e_ui = merge_color(e_color[e_ui_j], e_color[e_ui_j + 1], e_ui_i);
+//if (keyboard_check_pressed(vk_backspace)) global.timer = 1000000;
+
+if (checkKey("PAUSE", 0)) {
+    if (!global.paused or global.timer > 0) {
+        global.paused = !global.paused
+        if (!global.begun) global.begun = true;
+    } else {
+        global.paused = false;
+        global.timer = fulltime;
+        global.points = 0;
+        global.combo = 0;
+        global.lastTrick = "";
+        ds_list_clear(global.tricks);
+        room_restart();
+    }
+}
+
+if (!global.paused) {
+    global.timer -= delta_time;
+    if (global.timer < 0) {
+        global.timer = 0
+        global.paused = true;
+    }
+    
+    layer_hspeed("Background", -16);
+    layer_vspeed("Background", -6);
+} else {
+    layer_hspeed("Background", 0);
+    layer_vspeed("Background", 0);
+}
+
+if (global.timer == 0) global.paused = true;
+
+e_ui = merge_color(global.e_color[e_ui_j], global.e_color[e_ui_j + 1], e_ui_i);
 e_ui_i += e_ui_step * e_ui_dir;
 if (e_ui_i > 1 or e_ui_i < 0) {
     e_ui_j += 1 * e_ui_dir;
@@ -48,3 +81,5 @@ if (global.anim_sc) {
         global.anim_sc = false;
     }
 }
+
+if (global.points < 0) global.points = 0;

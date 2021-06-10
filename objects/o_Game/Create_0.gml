@@ -12,6 +12,9 @@ ds_list_add(global.key[? "RIGHT"], vk_right);
 global.key[? "UP"] = ds_list_create();
 ds_list_add(global.key[? "UP"], ord("W"));
 ds_list_add(global.key[? "UP"], vk_up);
+global.key[? "PAUSE"] = ds_list_create();
+ds_list_add(global.key[? "PAUSE"], vk_escape);
+ds_list_add(global.key[? "PAUSE"], vk_enter);
 /**/
 
 function checkKey (keyName, aval) {
@@ -63,10 +66,15 @@ global.trickdata[? "Impossible"]    = [40,     500,   40];
 global.trickdata[? "Slam"]          = [ 0,     200,    0];
 global.trickdata[? ""]              = [-1,       0,   -1];
 
+global.begun = false;
+global.paused = true;
+#macro fulltime (1.5 * 60) * 1000000
+global.timer = fulltime;
+
 
 e_ui = $FF8844;
 e_white = $EEEEEE;
-e_color = [
+global.e_color = [
     $FF8844,
     $FF7777,
     $FF4499,
@@ -97,3 +105,4 @@ global.anim_str = function () {
 }
 global.anim_sca = 0;
 global.anim_sc = false;
+
