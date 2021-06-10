@@ -36,6 +36,8 @@ self.trick = function (trickName) {
 	ds_list_insert(global.tricks, 0, trickName);
 	global.lastTrick = trickName;
 	
+	global.anim_lt = true;
+	
 	if (trickName != "Kickflip" and
 		trickName != "Ollie" and
 		trickName != "Slam") {

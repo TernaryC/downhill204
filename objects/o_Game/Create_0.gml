@@ -49,7 +49,7 @@ global.lastTrick = "";
 //Map of trick information, by name
 global.trickdata = ds_map_create();
 //Data:            Name                Length, Score, Limit
-global.trickdata[? "Ollie"]         = [15,     100,    0];
+global.trickdata[? "Ollie"]         = [10,     100,    0];
 global.trickdata[? "Kickflip"]      = [10,     200,    0];
 global.trickdata[? "Indy"]          = [35,     350,   25];
 global.trickdata[? "Melon"]         = [35,     400,   20];
@@ -76,3 +76,6 @@ e_ui_i = 0;
 e_ui_j = 0;
 e_ui_dir = 1;
 e_ui_step = 0.01;
+
+global.anim_lts = 1;
+global.anim_lt = false;

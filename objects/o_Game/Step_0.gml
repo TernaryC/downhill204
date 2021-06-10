@@ -14,3 +14,10 @@ if (e_ui_i > 1 or e_ui_i < 0) {
         e_ui_i = (1 + e_ui_dir) / 2;
     }
 }
+
+if (global.anim_lt and global.anim_lts < 1.5)
+    global.anim_lts += 0.5;
+if (global.anim_lt and global.anim_lts >= 1.5)
+    global.anim_lt = false;
+if (!global.anim_lt and global.anim_lts > 1)
+    global.anim_lts -= 0.3;

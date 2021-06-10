@@ -26,7 +26,9 @@ if (global.combo > 0) {
     draw_set_font(f_Sans18);
     draw_text(cx, _y + 160, global.combo);
     draw_set_font(f_Sans42);
-    draw_text(cx, _y + 125, string_upper(global.lastTrick));
+    draw_text_transformed(cx, _y + 125,
+                          string_upper(global.lastTrick),
+                          global.anim_lts, global.anim_lts, 0);
     draw_set_color(e_ui);
     draw_set_font(f_Sans28);
     var ts = ds_list_size(global.tricks);
