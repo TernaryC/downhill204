@@ -65,6 +65,7 @@ self.damage = function () {
 	if (isInvinc == false) {
 		isInvinc = true;
 		InvincCounter = 0;
+		tricking = false;
 	}
 }
 

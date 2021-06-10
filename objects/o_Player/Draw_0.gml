@@ -20,7 +20,11 @@ if (tricking) {
 			if (noTerminal) setSprite(s_Skater_Slam_End);
 			else setSprite(s_Skater_Land);
 		}
-		else setSprite(s_Skater);
+		else {
+			//if (isInvinc) setSprite(s_Skater_Hurt);
+			//else setSprite(s_Skater);
+			setSprite(s_Skater);
+		}
 	}
 	else {
 		if (noTerminal) setSprite(s_Skater_Slam);
@@ -43,10 +47,12 @@ draw_text(x + 32, y - 28, tricking);
 if (isInvinc == true) {
 	InvincCounter++;
 	if (InvincCounter % 3) {
-		o_Player.image_alpha = 0.4;
-	} else o_Player.image_alpha = 1;
+		image_alpha = 0.4;
+	} else image_alpha = 1;
 	if (InvincCounter > 30) {
 		isInvinc = false;
-		o_Player.image_alpha = 1;
+		image_alpha = 1;
 	}
+} else {
+	image_alpha = 1
 }

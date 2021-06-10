@@ -36,10 +36,10 @@ self.spawnBuild = function () {
     var bx = room_width + 600;
     var by = o_Slope.getIntersection(bx);
     var plat = instance_create_layer(bx, by, "Platforms", o_Building);
-    //plat.length = irandom_range(5, 8);
-    //plat.height = random_range(2, 4.25);
-    plat.length = 8
-    plat.height = 2
+    plat.length = irandom_range(5, 8);
+    plat.height = random_range(2, 4.25);
+    //plat.length = 8
+    //plat.height = 2
     spawn_plat = plat;
     spawn_plat_cool = 5;
 }

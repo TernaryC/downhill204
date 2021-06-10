@@ -43,6 +43,7 @@
     {"id":{"name":"s_Paint_Stack","path":"sprites/s_Paint_Stack/s_Paint_Stack.yy",},"order":4,},
     {"id":{"name":"s_Skater_Duck","path":"sprites/s_Skater_Duck/s_Skater_Duck.yy",},"order":1,},
     {"id":{"name":"s_Skater_Melon","path":"sprites/s_Skater_Melon/s_Skater_Melon.yy",},"order":5,},
+    {"id":{"name":"s_Skater_Hurt","path":"sprites/s_Skater_Hurt/s_Skater_Hurt.yy",},"order":8,},
     {"id":{"name":"s_Skater_Slam_End","path":"sprites/s_Skater_Slam_End/s_Skater_Slam_End.yy",},"order":2,},
     {"id":{"name":"s_Skater_Slam","path":"sprites/s_Skater_Slam/s_Skater_Slam.yy",},"order":0,},
     {"id":{"name":"s_Skater_Land","path":"sprites/s_Skater_Land/s_Skater_Land.yy",},"order":4,},
