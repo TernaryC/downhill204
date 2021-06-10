@@ -4,7 +4,7 @@ if (not layer_exists("Obstacles")) {
 }
 
 if (not layer_exists("Platforms")) {
-    layer_create(150, "Platforms");
+    layer_create(250, "Platforms");
 }
 
 spawn_timer = 0
