@@ -32,8 +32,7 @@ event_user(1); /* Gravity and Physics */
 
 //creates the particles when touching ground
 if (!global.paused) {
-	particleCounter = particleCounter + floor(global.points/500);
-	
+	particleCounter = particleCounter + 1 + floor(global.points/500);
 	if (particleCounter >= 30) {
 		part_particles_create(global.system, x-16, y-10, global.PartTrail, 1);
 		particleCounter = 0;
