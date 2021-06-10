@@ -62,3 +62,4 @@ global.trickdata[? "Madonna"]       = [40,     500,   40];
 global.trickdata[? "Impossible"]    = [40,     500,   40];
 global.trickdata[? ""]              = [-1,       0,   -1];
 
+audio_play_sound(so_gamplayMusic,1,99)

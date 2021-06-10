@@ -5,6 +5,8 @@ if (!inAir and !tricking) {
 		global.combo = 0;
 		ds_list_clear(global.tricks);
 		global.points += floor(trickTotal / 1500) * 100
+		part_particles_create(global.system, x, y, global.PartSuccessR, 3);
+		part_particles_create(global.system, x, y, global.PartSuccessL, 3);
 	}
 	
 	trickTotal = 0;

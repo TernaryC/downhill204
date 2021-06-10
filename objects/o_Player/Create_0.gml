@@ -35,6 +35,7 @@ self.trick = function (trickName) {
 	global.lastTrick = trickName;
 	
 	if (trickName != "Kickflip" and trickName != "Ollie") {
+		
 		if (vely > 0) vely -= 12;
 	}
 

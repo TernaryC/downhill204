@@ -3,17 +3,21 @@ if (kflipLimit == -1) kflipLimit = global.trickdata[? "Kickflip"][0];
 
 event_user(0); /* Get Input */
 
-
+if (!inAir){
+	if (!rollingAudioPlaying){
+		rollingAudioPlaying = true
+		audio_play_sound(s_rollingSound,1,999)
+	}
+}else{
+	rollingAudioPlaying = false
+	audio_pause_sound(s_rollingSound)	
+}
 
 //While ducking, duckTime increases
 if (ducking) {
 	if (duckTime < 50) duckTime++;
 }
 else duckTime = 0;
-if (duckTime == 40) {
-	part_particles_create(global.system, x, y, global.PartSuccessR, 3);
-	part_particles_create(global.system, x, y, global.PartSuccessL, 3);
-}
 
 if (kflipping) kflipTime++;
 else kflipTime = 0;

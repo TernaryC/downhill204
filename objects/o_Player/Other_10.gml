@@ -11,6 +11,7 @@ if (!inAir) {
 	        inAir = true;
 			mustLand = true;
 	        trick("Ollie");
+			audio_play_sound(so_jumping,0,0)
 	    }
 	    ducking = false;
 	}
@@ -53,5 +54,6 @@ if (!inAir) {
 			else trick("Indy");
 		} else trick("Indy");
 	}
+	
 }
 

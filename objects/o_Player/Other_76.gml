@@ -4,6 +4,7 @@ switch (event_data[? "message"]) {
 	case "TrickEnd":
 		tricking = false;
 		event_user(2);
+		
 		break;
 	case "Landing":
 		mustLand = false;
