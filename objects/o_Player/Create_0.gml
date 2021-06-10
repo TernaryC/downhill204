@@ -76,7 +76,9 @@ self.damage = function () {
 		isInvinc = true;
 		InvincCounter = 0;
 		tricking = false;
+		audio_play_sound(HurtSound,1,0)
 	}
+	
 }
 
 self.land = function (anchor) {
