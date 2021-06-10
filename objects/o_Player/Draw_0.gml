@@ -32,7 +32,7 @@ if (tricking) {
 	}
 }
 if (duckTime > duckLimit) setSprite(s_Skater_Duck);
-if (duckTime > 40) setSprite(s_Skater_Deep);
+if (duckTime == 30) setSprite(s_Skater_Deep);
 if (kflipTime > kflipLimit) setSprite(s_Skater_kFlip0);
 sprite_set_offset(sprite_index, 8, 29);
 

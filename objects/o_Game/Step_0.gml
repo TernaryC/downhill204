@@ -21,3 +21,30 @@ if (global.anim_lt and global.anim_lts >= 1.5)
     global.anim_lt = false;
 if (!global.anim_lt and global.anim_lts > 1)
     global.anim_lts -= 0.3;
+ 
+if (global.anim_ats == 1) global.anim_at = true;
+if (global.anim_at and global.anim_ats > -0.2)
+    global.anim_ats -= 0.2;
+if (global.anim_at and global.anim_ats <= -0.2) 
+    global.anim_at = false;
+if (!global.anim_at and global.anim_ats < 0)
+    global.anim_ats += 0.05;
+    
+if (global.anim_sts >= 20) {
+    global.anim_sc = true;
+    global.anim_st = false;
+    global.anim_sts = 0;
+    global.anim_str();
+}
+if (global.anim_st) global.anim_sts++;
+
+if (global.anim_sc) {
+    if (global.anim_sca >= 50) {
+        global.points += 50;
+        global.anim_sca -= 50;
+    } else {
+        global.points += global.anim_sca;
+        global.anim_sca = 0;
+        global.anim_sc = false;
+    }
+}

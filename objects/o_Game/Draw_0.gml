@@ -34,10 +34,25 @@ if (global.combo > 0) {
     var ts = ds_list_size(global.tricks);
     
     for (var i = 1; i <= 4; i++) {
-        var ty = 110 - (30 * i);
+        var ty = 110 - (30 * i) + (30 * global.anim_ats);
         if (global.tricks[| i] != undefined)
             draw_text(cx, _y + ty, global.tricks[| i]);
     }
+} else if (global.anim_sta[0] != 0) {
+    if (global.anim_sta[1] != 0) {
+        var cbz = map(global.anim_sts, 0, 20, 1, 1.5);
+        var cbx = map(global.anim_sts, 0, 20, cx, _x + 10);
+        var cby = map(global.anim_sts, 0, 20, _y + 160, hy - 30);
+        draw_set_font(f_Sans18);
+        draw_text_transformed(cbx, cby, global.anim_sta[1],
+                              cbz, cbz, 0);
+    }
+    draw_set_font(f_Sans42);
+    var ltz = map(global.anim_sts, 10, 20, 1, 0);
+    if (ltz > 1) ltz = 1;
+    draw_text_transformed(cx, _y + 125,
+                          string_upper(global.anim_sta[2]),
+                          ltz, ltz, 0);
 }
 
 /*

@@ -36,7 +36,9 @@ self.trick = function (trickName) {
 	ds_list_insert(global.tricks, 0, trickName);
 	global.lastTrick = trickName;
 	
+	global.anim_ats = 1;
 	global.anim_lt = true;
+	global.anim_str();
 	
 	if (trickName != "Kickflip" and
 		trickName != "Ollie" and
@@ -64,6 +66,7 @@ self.setSprite = function (sprite) {
 }
 
 self.damage = function () {
+	global.combo = 0;
 	if (isInvinc == false) {
 		isInvinc = true;
 		InvincCounter = 0;

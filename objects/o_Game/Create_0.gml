@@ -79,3 +79,21 @@ e_ui_step = 0.01;
 
 global.anim_lts = 1;
 global.anim_lt = false;
+
+global.anim_ats = 0;
+global.anim_at = false;
+
+global.anim_sts = 0;
+global.anim_st = false;
+
+global.anim_sta = [0, -1, "", 1];
+global.anim_stf = function () {
+    global.anim_sta[0] = 1;
+    global.anim_sta[1] = global.combo;
+    global.anim_sta[2] = global.lastTrick;
+}
+global.anim_str = function () {
+    global.anim_sta = [0, -1, "", 1];
+}
+global.anim_sca = 0;
+global.anim_sc = false;
